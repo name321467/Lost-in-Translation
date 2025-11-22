@@ -229,18 +229,24 @@ function checkQuiz() {
     resultDiv.style.display = 'block';
     resultDiv.classList.add('show');
 
+    const imgPath = 'emoji/';
+
     if (percentage === 100) {
         resultDiv.className = 'good show';
-        resultDiv.innerHTML = `🎉 Отлично! Вы ответили правильно на все ${total} вопроса!`;
+        // 🎉 -> 1f389.png
+        resultDiv.innerHTML = `<img src="${imgPath}1f389.png" class="emoji-icon" alt="🎉"> Отлично! Вы ответили правильно на все ${total} вопроса!`;
     } else if (percentage >= 75) {
         resultDiv.className = 'good show';
-        resultDiv.innerHTML = `👍 Хорошо! Вы ответили правильно на ${correctCount} из ${total} вопросов.`;
+        // 👍 -> 1f44d.png
+        resultDiv.innerHTML = `<img src="${imgPath}1f44d.png" class="emoji-icon" alt="👍"> Хорошо! Вы ответили правильно на ${correctCount} из ${total} вопросов.`;
     } else if (percentage >= 50) {
         resultDiv.className = 'average show';
-        resultDiv.innerHTML = `📚 Неплохо! Вы ответили правильно на ${correctCount} из ${total} вопросов. Повторите материал!`;
+        // 📚 -> 1f4da.png
+        resultDiv.innerHTML = `<img src="${imgPath}1f4da.png" class="emoji-icon" alt="📚"> Неплохо! Вы ответили правильно на ${correctCount} из ${total} вопросов. Повторите материал!`;
     } else {
         resultDiv.className = 'bad show';
-        resultDiv.innerHTML = `❌ Вы ответили правильно на ${correctCount} из ${total} вопросов. Пересмотрите карточки еще раз!`;
+        // ❌ -> 274c.png
+        resultDiv.innerHTML = `<img src="${imgPath}274c.png" class="emoji-icon" alt="❌"> Вы ответили правильно на ${correctCount} из ${total} вопросов. Пересмотрите карточки еще раз!`;
     }
 
     // Скрываем кнопку "Проверить" и показываем кнопку "Перемешать"
@@ -261,4 +267,5 @@ function shuffleQuiz() {
 }
 
 // Запускаем тест при загрузке страницы (4 случайных вопроса)
+
 generateQuiz();
