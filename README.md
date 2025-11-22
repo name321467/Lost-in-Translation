@@ -8,9 +8,10 @@
 - Интерактивный тест
 
 ## 🚀 Демо
-[Открыть проект](https://твой-username.github.io/lost-in-translation/)
+[Открыть проект](https://name321467.github.io/Lost-in-Translation/)
 
 ## 🛠️ Технологии
 - HTML5
 - CSS3
+
 - JavaScript (Vanilla)
