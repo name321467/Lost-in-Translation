@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Основная информация -->
+    <title>Lost in Translation</title>
+    <meta name="description"
+        content="Интерактивный проект для изучения английских идиом. 6 карточек с популярными выражениями, мнемотехники для запоминания и тест для проверки знаний.">
+    <meta name="keywords"
+        content="английские идиомы, изучение английского, english idioms, cool as a cucumber, no pain no gain, fall in love, spill the tea">
+    <meta name="author" content="Твое имя">
+
+    <!-- Robots (разрешаем индексацию) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph для соцсетей (Facebook, VK, Telegram) -->
+    <meta property="og:title" content="Lost in Translation — Учим английские идиомы">
+    <meta property="og:description" content="Интерактивные карточки и тест для изучения популярных английских идиом">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://твой-username.github.io/lost-in-translation/">
+    <meta property="og:image" content="https://твой-username.github.io/lost-in-translation/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Шрифты Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <h1>🌍 Lost in Translation</h1>
+        </div>
+    </header>
+    <section>
+        <div class="cards-grid">
+
+            <!-- Карточка 1: огурец -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Materials/cucumber.jpg" alt="Cucumber" fetchpriority="high">
+                        <button onclick="flipCard(this)">Узнать значение</button>
+                    </div>
+
+                    <div class="card-back card-back-1">
+                        <h3>Спокойный, как удав</h3>
+                        <div class="card-back-content">
+                            <p><strong>Как запомнить:</strong>
+                                Cool — прохладный, cucumber — огурец.<br>
+                                Огурец прохладный на ощупь, человек — эмоционально.</p>
+                            <p><strong>Пример:</strong>
+                                She stayed as cool as a cucumber during the exam.</p>
+                        </div>
+                        <button onclick="flipCard(this)">Назад</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 2: влюбиться -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Materials/fall-in-love.png" alt="Fall in Love" fetchpriority="high">
+                        <button onclick="flipCard(this)">Узнать значение</button>
+                    </div>
+
+                    <div class="card-back card-back-2">
+                        <h3>Начать испытывать сильное чувство любви</h3>
+                        <div class="card-back-content">
+                            <p><strong>Как запомнить:</strong>
+                                Fall — падать, in love — в любовь.<br>
+                                Влюблённый человек теряет контроль, как будто падает с высоты.<br>
+                                Его состояние — это свободное падение в любви.</p>
+                            <p><strong>Пример:</strong>
+                                He fell in love with her at first sight.</p>
+                        </div>
+                        <button onclick="flipCard(this)">Назад</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 3: сплетничать -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Materials/spill-the-tea.png" alt="Spill the tea" fetchpriority="high">
+                        <button onclick="flipCard(this)">Узнать значение</button>
+                    </div>
+
+                    <div class="card-back card-back-3">
+                        <h3>Рассказать сплетни или секреты</h3>
+                        <div class="card-back-content">
+                            <p><strong>Как запомнить:</strong>
+                                Spill — пролить, the tea — чай.<br>
+                                Когда проливают чай, всё вокруг оказывается залито.<br>
+                                Когда проливают секрет, он мгновенно распространяется.</p>
+                            <p><strong>Пример:</strong>
+                                Come on, spill the tea! What did he say?</p>
+                        </div>
+                        <button onclick="flipCard(this)">Назад</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 4: без усилий не будет результата -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Materials/no-pain.jpg" alt="No pain, no gain" fetchpriority="high">
+                        <button onclick="flipCard(this)">Узнать значение</button>
+                    </div>
+
+                    <div class="card-back card-back-4">
+                        <h3>Без усилий и трудностей не будет результата.</h3>
+                        <div class="card-back-content">
+                            <p><strong>Как запомнить:</strong>
+                                Pain — боль, gain — результат.<br>
+                                Боль в мышцах после тренировки означает их рост.<br>
+                                В жизни без усилий и трудностей не будет и достижений.</p>
+                            <p><strong>Пример:</strong>
+                                No pain, no gain — keep going!</p>
+                        </div>
+                        <button onclick="flipCard(this)">Назад</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 5: на 9 небе от счастья -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Materials/one-in-cloud.jpeg" alt="One in cloud nine" fetchpriority="high">
+                        <button onclick="flipCard(this)">Узнать значение</button>
+                    </div>
+
+                    <div class="card-back card-back-5 ">
+                        <h3>Чувствовать огромную радость и счастье.</h3>
+                        <div class="card-back-content">
+                            <p><strong>Как запомнить:</strong>
+                                Cloud — облако, nine — девятое.<br>
+                                Представь, облако №9 — самое высокое и легкое в небе, где бывают только очень
+                                счастливые люди.<br>
+                                Человек на этом облаке парит над всеми проблемами.</p>
+                            <p><strong>Пример:</strong>
+                                She's been on cloud nine since she got the job.</p>
+                        </div>
+                        <button onclick="flipCard(this)">Назад</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 6: уехать в закат -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Materials/hit-the-road.png" alt="Hit the Road" fetchpriority="high">
+                        <button onclick="flipCard(this)">Узнать значение</button>
+                    </div>
+
+                    <div class="card-back card-back-6 ">
+                        <h3>Резко тронуться, уехать</h3>
+                        <div class="card-back-content">
+                            <p><strong>Как запомнить:</strong>
+                                Hit — резко стартовать, рвануть, the road — дорога.<br>
+                                Представь машину, которая резко трогается — колёса буквально ударяются о дорогу,
+                                оставляя след.<br></p>
+                            <p><strong>Пример:</strong>
+                                Alright guys, let’s hit the road.</p>
+                        </div>
+                        <button onclick="flipCard(this)">Назад</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quiz-section">
+        <h2>🎯 Проверь свои знания!</h2>
+        <p class="quiz-description">Пройди тест и узнай, насколько хорошо ты запомнил идиомы</p>
+
+        <div id="quiz-container">
+            <!-- Вопросы будут генерироваться здесь JavaScript -->
+        </div>
+
+        <div id="quiz-buttons">
+            <!-- Кнопка "Проверить" появится после ответа на все вопросы -->
+            <button id="check-btn" style="display: none;" onclick="checkQuiz()">Проверить ответы</button>
+
+            <!-- Кнопка "Перемешать" появится после проверки -->
+            <button id="shuffle-btn" style="display: none;" onclick="shuffleQuiz()">🔄 Перемешать и пройти
+                заново</button>
+        </div>
+
+        <!-- Результат теста -->
+        <div id="quiz-result"></div>
+    </section>
+    <section class="about-section">
+        <h2>📖 О проекте Lost in Translation</h2>
+
+        <div class="about-content">
+            <p>
+                <strong>Lost in Translation</strong> — это образовательный проект, созданный специально для тех,
+                кто только начинает изучать английский язык.
+            </p>
+
+            <p>
+                Наша цель: помочь вам понять настоящее значение популярных английских идиом и избежать ошибок
+                буквального перевода, которые так часто встречаются у начинающих.
+            </p>
+
+            <div class="about-highlight">
+                <h3>🎯 Почему идиомы так важны?</h3>
+                <p>
+                    Идиомы — это устойчивые выражения, смысл которых невозможно понять, просто переведя каждое слово.
+                    Они делают речь живой, естественной и помогают лучше понимать носителей языка.
+                </p>
+            </div>
+
+            <p>
+                С помощью наших интерактивных карточек вы не только запомните идиомы, но и поймёте,
+                как и когда их использовать в реальной жизни.
+            </p>
+
+            <div class="about-features">
+                <div class="feature">
+                    <span class="feature-icon">🎴</span>
+                    <p><strong>6 карточек</strong><br>с популярными идиомами</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🧠</span>
+                    <p><strong>Техники ассоциации</strong><br>для лёгкого запоминания</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✅</span>
+                    <p><strong>Интерактивный тест</strong><br>для проверки знаний</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="jss.js"></script>
+</body>
+
+</html>
