@@ -21,6 +21,27 @@ body {
     margin: 0;
 }
 
+.emoji-icon {
+    width: 1em;
+    /* Размер как у текста */
+    height: 1em;
+    display: inline-block;
+    vertical-align: -0.1em;
+    /* Выравнивание с текстом */
+}
+
+/* Для больших эмодзи-картинок в features */
+.feature-icon img {
+    width: 4rem;
+    /* Увеличили размер, чтобы было как у соседей */
+    height: 4rem;
+    display: block;
+    margin: 0 auto 10px auto;
+    /* 0 сверху, auto по бокам (центр), 10px снизу */
+    object-fit: contain;
+    /* Чтобы картинка не искажалась */
+}
+
 header {
     padding: 20px 0 20px 0;
 
