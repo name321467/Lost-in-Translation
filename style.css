@@ -55,7 +55,7 @@ header {
     display: flex;
     align-items: center;
     height: 50px;
-    width: 500px;
+    width: clamp(300px, calc(500 / 1219 * 100vw), 500px);
 
     backdrop-filter: blur(10px);
     /* Размывает то, что находится за элементом, но не сам элемент */
@@ -72,6 +72,7 @@ header {
 header h1 {
     width: 100%;
     text-align: center;
+    font-size: clamp(1.3rem, calc(32 / 1219 * 100vw), 2rem);
 }
 
 section {
@@ -489,9 +490,9 @@ button:hover {
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
-    header h1 {
+    /* header h1 {
         font-size: 1.8rem;
-    }
+    } */
 
     .cards-grid {
         grid-template-columns: 1fr;
@@ -521,7 +522,7 @@ button:hover {
     }
 
     .card-front img {
-        width: 52%;
+        /* width: 72%; */
         /* Пропорционально карточке */
         height: auto;
         aspect-ratio: 1/1;
@@ -538,6 +539,7 @@ button:hover {
     }
 
     button {
+        /* margin-top: 20px; */
         padding: 8px 16px;
         font-size: 0.9rem;
     }
@@ -592,9 +594,9 @@ button:hover {
         margin: 20px 10px;
     }
 
-    header h1 {
+    /* header h1 {
         font-size: 1.5rem;
-    }
+    } */
 
     .cards-grid {
         padding: 10px;
@@ -609,7 +611,7 @@ button:hover {
     }
 
     .card-front img {
-        width: 50%;
+        /* width: 50%; */
         max-width: 180px;
     }
 
@@ -626,7 +628,7 @@ button:hover {
     button {
         padding: 8px 14px;
         font-size: 0.85rem;
-        margin-top: 12px;
+        /* margin-top: 12px; */
     }
 
     /* Секции с отступами */
@@ -700,10 +702,10 @@ button:hover {
 }
 
 /* Адаптивность для минимальных экранов (320px) */
-@media (max-width: 360px) {
-    header h1 {
+@media (max-width: 390px) {
+    /* header h1 {
         font-size: 1.3rem;
-    }
+    } */
 
     .cards-grid {
         padding: 8px;
@@ -719,7 +721,7 @@ button:hover {
     }
 
     .card-front img {
-        width: 48%;
+        /* width: 48%; */
         max-width: 144px;
     }
 
@@ -737,7 +739,7 @@ button:hover {
     button {
         padding: 7px 12px;
         font-size: 0.8rem;
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     /* Секции с отступами на 320px */
@@ -832,6 +834,12 @@ button:hover {
     .about-footer {
         font-size: 1rem;
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 330px) {
+    button {
+        margin-top: 12px;
     }
 }
 
