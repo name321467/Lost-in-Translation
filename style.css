@@ -726,6 +726,10 @@ button:hover {
         /* padding: 7px 0 0 0; */
     }
 
+    .card-back {
+        overflow-y: hidden;
+    }
+
     /* Минимальные размеры текста с сохранением пропорций */
     h3 {
         font-size: 13px;
@@ -924,3 +928,4 @@ button:hover {
     pointer-events: auto;
     transform: translateX(-50%) translateY(0);
 }
+
