@@ -22,11 +22,11 @@ const quizDatabase = [
         idiom: "On cloud nine",
         question: "Что означает 'On cloud nine'?",
         options: [
-            "Летать на облаке",
+            "На седьмом небе от счастья",
             "Чувствовать огромную радость и счастье",
-            "Быть в мечтах"
+            "На седьмом небе от счастья"
         ],
-        correct: 1
+        correct: 2
     },
     {
         idiom: "Hit the road",
@@ -269,4 +269,5 @@ function shuffleQuiz() {
 // Запускаем тест при загрузке страницы (4 случайных вопроса)
 
 generateQuiz();
+
 
